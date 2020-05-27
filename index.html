@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Blog Website Project</title>
   </head>
@@ -12,7 +12,7 @@
     <header>
       <nav>
         <div class="container">
-          <div class="row">
+          <div class="flexbox">
             <div class="nav-left">
               <a class="nav-link"
                 ><i class="fa fa-search" aria-label="Search"></i
@@ -71,16 +71,51 @@
       </nav>
       <!--  -->
       <div class="row">
-        <div class="logo-part">
-          <h1 class="logo">Blog Website</h1>
+        <div class="logo-part text-center">
+          <h1 class="logo">Life Style</h1>
           <h6 class="logo-text">The first project of Mine</h6>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="slider">
-            <img class="img-responsive" alt="" src="img/1170x488.png" />
+          <div class="slider" id="slider">
+            <div class="control-left" onclick="goPrev();">
+              <i class="fa fa-arrow-left fa-2x" aria-label="left"></i>
+            </div>
+            <div class="control-right" onclick="goNext();">
+              <i class="fa fa-arrow-right fa-2x" aria-label="right"></i>
+            </div>
+            <div class="slider-item class1">
+              <img class="img-responsive" alt="" src="img/blue.png" title="1" />
+            </div>
+            <div class="slider-item display-none class2">
+              <img
+                class="img-responsive"
+                alt=""
+                src="img/green.png"
+                title="2"
+              />
+            </div>
+            <div class="slider-item display-none class3">
+              <img class="img-responsive" alt="" src="img/red.png" title="3" />
+            </div>
+            <div class="slider-item display-none class4">
+              <img
+                class="img-responsive"
+                alt=""
+                src="img/yello.png"
+                title="4"
+              />
+            </div>
+            <div class="slider-item display-none class5">
+              <img
+                class="img-responsive"
+                alt=""
+                src="img/1170x488.png"
+                title="4"
+              />
+            </div>
           </div>
         </div>
 
@@ -95,6 +130,7 @@
     <section class="container flexbox">
       <section class="container-content">
         <h2 class="section-header">Recent post</h2>
+        <hr />
         <div class="row">
           <div class="post-card-lg">
             <div class="post-card-img">
@@ -321,6 +357,7 @@
       </section>
       <aside class="container-aside">
         <h2 class="section-header">Siderbar</h2>
+        <hr />
         <div class="sidebar-card">
           <form>
             <input type="text" value="Search Now" />
@@ -330,6 +367,7 @@
 
         <div class="sidebar-card">
           <h3 class="section-header">Popular post</h3>
+          <hr />
           <ul class="post-list">
             <li>
               <a href="#">
@@ -370,6 +408,7 @@
 
         <div class="sidebar-card">
           <h3 class="section-header">Categories</h3>
+          <hr />
           <ul class="category-list">
             <li>
               <a href="#"><h5>Images(95)</h5></a>
@@ -394,6 +433,7 @@
 
         <div class="sidebar-card">
           <h3 class="section-header">Instagram</h3>
+          <hr />
           <ul class="flexbox">
             <li>
               <a href="#">
@@ -448,6 +488,7 @@
       <div class="flexbox">
         <div class="aboutme">
           <h3 class="section-header">About US</h3>
+          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
             harum.
@@ -457,6 +498,7 @@
         </div>
         <div class="latesttwwet">
           <h3 class="section-header">latest tweet</h3>
+          <hr />
           <div class="tweets">
             <h5>John Doe</h5>
             <p>
@@ -464,7 +506,7 @@
               iusto qui sunt distinctio quae maxime voluptatum delectus modi
               temporibus pariatur?
             </p>
-            <a href="#"
+            <a href="#" class="link"
               ><i class="fa fa-tumblr" aria-label="Twitter"></i> @johnDoe561</a
             >
           </div>
@@ -475,13 +517,14 @@
               iusto qui sunt distinctio quae maxime voluptatum delectus modi
               temporibus pariatur?
             </p>
-            <a href="#"
+            <a href="#" class="link"
               ><i class="fa fa-tumblr" aria-label="Twitter"></i> @johnDoe561</a
             >
           </div>
         </div>
         <div class="newsletter">
           <h3 class="section-header">Subscribe our newsletter</h3>
+          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
             dolor!
@@ -498,6 +541,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
 <!--  -->

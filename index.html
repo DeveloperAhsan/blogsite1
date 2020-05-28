@@ -8,7 +8,7 @@
     <title>Blog Website Project</title>
   </head>
 
-  <body>
+  <body onload="setInterval(function(){ goNext(); }, 2000);sliderSubtitle();">
     <header>
       <nav>
         <div class="container">
@@ -71,7 +71,7 @@
       </nav>
       <!--  -->
       <div class="row">
-        <div class="logo-part text-center">
+        <div class="logo-part text-center section-gap">
           <h1 class="logo">Life Style</h1>
           <h6 class="logo-text">The first project of Mine</h6>
         </div>
@@ -88,6 +88,7 @@
             </div>
             <div class="slider-item class1">
               <img class="img-responsive" alt="" src="img/blue.png" title="1" />
+              <h5 class="subtitle">01. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class2">
               <img
@@ -96,9 +97,11 @@
                 src="img/green.png"
                 title="2"
               />
+              <h5 class="subtitle">02. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class3">
               <img class="img-responsive" alt="" src="img/red.png" title="3" />
+              <h5 class="subtitle">03. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class4">
               <img
@@ -107,6 +110,7 @@
                 src="img/yello.png"
                 title="4"
               />
+              <h5 class="subtitle">04. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class5">
               <img
@@ -115,12 +119,22 @@
                 src="img/1170x488.png"
                 title="4"
               />
+              <h5 class="subtitle">05. Fashion Snap</h5>
+            </div>
+            <div class="subtitle-set flexbox">
+              <h5 class="subtite-prev">
+                Subtitle Here
+              </h5>
+              <h5 class="subtite-active">Subtitle Here</h5>
+              <h5 class="subtite-next">
+                Subtitle Here
+              </h5>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="slider-small">
+          <div class="slider-small section-gap">
             <img class="img-responsive" alt="" src="img/1170x203.png" />
           </div>
         </div>

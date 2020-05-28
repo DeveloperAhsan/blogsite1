@@ -20,12 +20,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
+  font-family: Raleway, "Times New Roman", Times, serif;
   background-color: #f6f6f6;
   line-height: 1.5rem;
-  font-size: 100%;
   width: 100%;
   color: #424242;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  clear: both;
 }
 
 .flexbox {
@@ -43,7 +58,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, "Times New Roman", Times, serif;
   text-transform: uppercase;
   color: #313131;
 }
@@ -74,7 +88,7 @@ p {
 
 hr {
   border: 0;
-  height: 3px;
+  height: 0.1875rem;
   margin-top: 0.625rem;
   background-color: #ffb69b;
   width: 6rem;
@@ -87,22 +101,11 @@ a {
 }
 
 .link {
-  color: #ffb79b;
+  color: #ffb69b;
 }
 
 a:hover {
   color: #d07451;
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.row {
-  display: block;
-  width: 100%;
-  clear: both;
 }
 
 .img-responsive {
@@ -116,8 +119,8 @@ a:hover {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 12px 20px;
-  border: 1px solid #e9e9ea;
+  padding: 0.75rem 1.25rem;
+  border: 0.0625rem solid #e9e9ea;
 }
 
 .continue-btn {
@@ -141,7 +144,9 @@ a:hover {
 .display-none {
   display: none;
 }
-
+.section-gap {
+  margin: 3.125rem 0;
+}
 /********************************************************
  Header
 *******************************************************/
@@ -149,7 +154,7 @@ a:hover {
 /********* Navbar **********/
 .nav-left {
   width: 22%;
-  border-left: 1px solid #cdcdcd;
+  border-left: 0.0625rem solid #cdcdcd;
 }
 
 .nav-middle {
@@ -158,13 +163,13 @@ a:hover {
 .nav-right {
   width: 20%;
   text-align: right;
-  border-right: 1px solid #cdcdcd;
+  border-right: 0.0625rem solid #cdcdcd;
 }
 
 nav {
-  min-height: 50px;
+  min-height: 3.125rem;
   background-color: #ffffff;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 0.0625rem solid #cdcdcd;
 }
 
 nav ul li {
@@ -172,22 +177,17 @@ nav ul li {
 }
 
 .nav-link {
-  font-family: raleway;
   text-transform: uppercase;
   font-weight: bolder;
-  margin: 0px 15px;
-  line-height: 50px;
+  margin: 0rem 0.9375rem;
+  line-height: 3.125rem;
 }
 
 .social-link > li {
-  border-left: 1px solid #cdcdcd;
+  border-left: 0.0625rem solid #cdcdcd;
 }
 
 /************ LOGO ****************/
-
-.logo-part {
-  margin: 50px 0px;
-}
 
 .logo {
   font-family: "Notera 2 PERSONAL USE ONLY Light", "Times New Roman", Times,
@@ -199,7 +199,7 @@ nav ul li {
 }
 
 .logo-text {
-  color: #ffb79b;
+  color: #ffb69b;
   font-weight: 600;
   width: 22%;
   margin: 0 auto;
@@ -211,7 +211,7 @@ nav ul li {
 .logo-text::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #000000;
+  border-bottom: 0.0625rem solid #000000;
 }
 
 .logo-text::after {
@@ -227,41 +227,61 @@ nav ul li {
 **************************/
 .slider {
   width: 100%;
-  min-height: 550px;
+  min-height: 32.1875rem;
   position: relative;
 }
 .slider .slider-item {
-  min-height: 488px;
+  min-height: 30.5rem;
   position: absolute;
   z-index: -2;
 }
 
 .slider .control-left {
+  cursor: pointer;
   background-color: rgba(75, 70, 70, 0.6);
   position: absolute;
   left: 0;
-  min-height: 488px;
+  min-height: 30.5rem;
   opacity: 0;
   transition: all 1s;
 }
 .slider .control-right {
+  cursor: pointer;
   background-color: rgba(75, 70, 70, 0.6);
   position: absolute;
   right: 0;
-  min-height: 488px;
+  min-height: 30.5rem;
   opacity: 0;
   transition: all 1s;
 }
 
 .slider .control-right i,
 .slider .control-left i {
-  padding: 0 35px;
-  margin-top: 240px;
+  padding: 0 2.1875rem;
+  margin-top: 15rem;
 }
 
 .slider:hover .control-right,
 .slider:hover .control-left {
   opacity: 1;
+}
+
+.subtitle {
+  display: none;
+}
+.subtitle-set {
+  background-color: #f6f6f6;
+  position: absolute;
+  border-bottom: 0.0625rem solid #cdcdcd;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.subtitle-set h5 {
+  border-bottom: 0.125rem solid #ffb69b;
+}
+.subtite-active {
+  color: #ffb69b;
 }
 
 /*********************************************************
@@ -283,4 +303,35 @@ nav ul li {
 
 footer > .flexbox > div {
   width: 32%;
+}
+
+/********************************************
+ Responsive
+********************************************/
+
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 960px;
+  }
+  .subtitle-set {
+    bottom: -14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 480px;
+  }
 }

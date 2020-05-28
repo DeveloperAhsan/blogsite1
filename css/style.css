@@ -109,8 +109,8 @@ a:hover {
 }
 
 .img-responsive {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .text-center {
   text-align: center;
@@ -282,6 +282,62 @@ nav ul li {
 }
 .subtite-active {
   color: #ffb69b;
+}
+
+/***********************************************
+ SMALL SLIDER
+**************************************************/
+.small-slider {
+  position: relative;
+  width: 100%;
+}
+.small-slider .control-left {
+  position: absolute;
+  left: 0;
+  padding: 0 1.125rem;
+  background-color: #cdcdcd;
+  min-height: 100%;
+  transition: all 2s;
+}
+.small-slider img {
+  width: 100%;
+}
+.small-slider .badge {
+  position: absolute;
+  text-align: center;
+  width: 8.75rem;
+  left: 45%;
+  top: -0.75rem;
+  background-color: #ffb69b;
+  color: #ffffff;
+}
+
+.small-slider .control-right {
+  position: absolute;
+  right: 0;
+  padding: 0 1.125rem;
+  background-color: #cdcdcd;
+  min-height: 100%;
+  transition: all 2s;
+}
+
+.small-slider .control-right i {
+  position: absolute;
+  top: 40%;
+  right: 0.825rem;
+  color: #ffffff;
+}
+.small-slider .control-left i {
+  position: absolute;
+  top: 40%;
+  left: 0.825rem;
+  color: #ffffff;
+}
+
+.small-slider:hover .control-left,
+.small-slider:hover .control-right {
+  background-color: #ffb69b;
+  cursor: pointer;
 }
 
 /*********************************************************

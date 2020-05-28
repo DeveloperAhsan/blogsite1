@@ -8,7 +8,9 @@
     <title>Blog Website Project</title>
   </head>
 
-  <body onload="setInterval(function(){ goNext(); }, 2000);sliderSubtitle();">
+  <body
+    onload="setInterval(function(){ goNext();smallNext(); }, 2000);sliderSubtitle();"
+  >
     <header>
       <nav>
         <div class="container">
@@ -134,8 +136,23 @@
         </div>
 
         <div class="row">
-          <div class="slider-small section-gap">
-            <img class="img-responsive" alt="" src="img/1170x203.png" />
+          <div class="small-slider section-gap flexbox" id="small-slider">
+            <h5 class="badge">Instagram</h5>
+            <div class="control-left" onclick="smallPrev();">
+              <i class="fa fa-angle-left fa-2x" aria-label="left"></i>
+            </div>
+            <div class="control-right" onclick="smallNext();">
+              <i class="fa fa-angle-right fa-2x" aria-label="right"></i>
+            </div>
+            <img class="img-responsive active" alt="" src="img/250x200.png" />
+            <img class="img-responsive active" alt="" src="img/s8.png" />
+            <img class="img-responsive active" alt="" src="img/s7.png" />
+            <img class="img-responsive active" alt="" src="img/s9.png" />
+            <img class="img-responsive display-none" alt="" src="img/s1.png" />
+            <img class="img-responsive display-none" alt="" src="img/s2.png" />
+            <img class="img-responsive display-none" alt="" src="img/s3.png" />
+            <img class="img-responsive display-none" alt="" src="img/s4.png" />
+            <img class="img-responsive display-none" alt="" src="img/s5.png" />
           </div>
         </div>
       </div>

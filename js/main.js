@@ -39,6 +39,45 @@ function goPrev() {
   }, 100);
 }
 
+function goPostNext() {
+  setTimeout(function () {
+    var slider = document.getElementById("sliderPost");
+    var sliderItem = slider.getElementsByClassName("sliderPost-item");
+    for (let i = 0; i < sliderItem.length; i++) {
+      var displayClassName = sliderItem[i].className;
+      if (displayClassName.indexOf("display-none") == -1) {
+        sliderItem[i].classList.add("display-none");
+        var nextItem = i + 1;
+        console.log(i);
+        if (i == sliderItem.length - 1) {
+          nextItem = 0;
+        }
+        sliderItem[nextItem].classList.remove("display-none");
+        break;
+      }
+    }
+  }, 100);
+}
+
+function goPostPrev() {
+  setTimeout(function () {
+    var slider = document.getElementById("sliderPost");
+    var sliderItem = slider.getElementsByClassName("sliderPost-item");
+    for (let i = 0; i < sliderItem.length; i++) {
+      var displayClassName = sliderItem[i].className;
+      if (displayClassName.indexOf("display-none") == -1) {
+        sliderItem[i].classList.add("display-none");
+        var nextItem = i - 1;
+        if (i == 0) {
+          nextItem = sliderItem.length - 1;
+        }
+        sliderItem[nextItem].classList.remove("display-none");
+        break;
+      }
+    }
+  }, 100);
+}
+
 function sliderSubtitle(carrent = 0) {
   var next, prev;
 

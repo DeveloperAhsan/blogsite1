@@ -9,9 +9,9 @@
   </head>
 
   <body
-    onload="setInterval(function(){ goNext();smallNext(); }, 2000);sliderSubtitle();"
+    onload="setInterval(function(){ goNext();smallNext(); goPostNext();}, 3000);sliderSubtitle();"
   >
-    <header>
+    <header id="header">
       <nav>
         <div class="container">
           <div class="flexbox">
@@ -95,20 +95,25 @@
             <div class="slider-item display-none class2">
               <img
                 class="img-responsive"
-                alt=""
+                alt="1170x488"
                 src="img/green.png"
                 title="2"
               />
               <h5 class="subtitle">02. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class3">
-              <img class="img-responsive" alt="" src="img/red.png" title="3" />
+              <img
+                class="img-responsive"
+                alt="1170x488"
+                src="img/red.png"
+                title="3"
+              />
               <h5 class="subtitle">03. Fashion Snap</h5>
             </div>
             <div class="slider-item display-none class4">
               <img
                 class="img-responsive"
-                alt=""
+                alt="1170x488"
                 src="img/yello.png"
                 title="4"
               />
@@ -117,7 +122,7 @@
             <div class="slider-item display-none class5">
               <img
                 class="img-responsive"
-                alt=""
+                alt="1170x488"
                 src="img/1170x488.png"
                 title="4"
               />
@@ -144,15 +149,39 @@
             <div class="control-right" onclick="smallNext();">
               <i class="fa fa-angle-right fa-2x" aria-label="right"></i>
             </div>
-            <img class="img-responsive active" alt="" src="img/250x200.png" />
-            <img class="img-responsive active" alt="" src="img/s8.png" />
-            <img class="img-responsive active" alt="" src="img/s7.png" />
-            <img class="img-responsive active" alt="" src="img/s9.png" />
-            <img class="img-responsive display-none" alt="" src="img/s1.png" />
-            <img class="img-responsive display-none" alt="" src="img/s2.png" />
-            <img class="img-responsive display-none" alt="" src="img/s3.png" />
-            <img class="img-responsive display-none" alt="" src="img/s4.png" />
-            <img class="img-responsive display-none" alt="" src="img/s5.png" />
+            <img
+              class="img-responsive active"
+              alt="250x200"
+              src="img/250x200.png"
+            />
+            <img class="img-responsive active" alt="250x200" src="img/s8.png" />
+            <img class="img-responsive active" alt="250x200" src="img/s7.png" />
+            <img class="img-responsive active" alt="250x200" src="img/s9.png" />
+            <img
+              class="img-responsive display-none"
+              alt="250x200"
+              src="img/s1.png"
+            />
+            <img
+              class="img-responsive display-none"
+              alt="250x200"
+              src="img/s2.png"
+            />
+            <img
+              class="img-responsive display-none"
+              alt="250x200"
+              src="img/s3.png"
+            />
+            <img
+              class="img-responsive display-none"
+              alt="250x200"
+              src="img/s4.png"
+            />
+            <img
+              class="img-responsive display-none"
+              alt="250x200"
+              src="img/s5.png"
+            />
           </div>
         </div>
       </div>
@@ -163,224 +192,277 @@
         <h2 class="section-header">Recent post</h2>
         <hr />
         <div class="row">
-          <div class="post-card-lg">
+          <div class="post-card-lg card">
             <div class="post-card-img">
-              <img src="img/872x372.png" alt="" class="img-responsive" />
+              <img src="img/872x372.png" alt="872x372" class="img-responsive" />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                dolores ratione eius Vel porro dicta commodi? Eveniet maxime
+                voluptate cumque fuga sed vitae itaque? ipsum dolor sit amet
+                consectetur adipisicing elit. Harum atque sed in, fugiat natus
+                laboriosam voluptatum laudantium dolores ratione eius impedit
+                similique. Officiis, nisi impedit! impedit similique. Officiis,
+                nisi impedit!
               </p>
-              <button class="btn continue-btn">Continue Reading</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn continue-btn">Continue Reading</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="post-card-sm">
+        <div class="flexbox">
+          <div class="post-card-sm card">
             <div class="post-card-img">
-              <img src="img/425x240.png" alt="" class="img-responsive" />
+              <img
+                src="img/425x240x.png"
+                alt="425x240"
+                class="img-responsive"
+              />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                sint est amet ullam ea facere incidunt fugit recusandae
+                voluptatum explicabo? ipsum dolor, sit amet consectetur
+                adipisicing elit.
               </p>
-              <button class="btn readmore-btn">Read more</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn readmore-btn">Read more</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="post-card-sm">
+          <div class="post-card-sm card">
             <div class="post-card-img">
-              <img src="img/425x240.png" alt="" class="img-responsive" />
+              <img src="img/425x240.png" alt="425x240" class="img-responsive" />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 atque sed in, fugiat natus laboriosam voluptatum laudantium
                 dolores ratione eius impedit similique. Officiis, nisi impedit!
               </p>
-              <button class="btn readmore-btn">Read more</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn readmore-btn">Read more</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="post-card-md">
+          <div class="post-card-md flexbox card">
             <div class="post-card-img">
-              <img src="img/300x280.png" alt="" class="img-responsive" />
+              <img src="img/300x280.png" alt="300x280" class="img-responsive" />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                atque sed in, fugiat natus laboriosam
               </p>
-              <button class="btn continue-btn">Continue Reading</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn continue-btn">Continue Reading</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="post-card-md">
+          <div class="post-card-md flexbox card">
             <div class="post-card-img">
-              <img src="img/300x280.png" alt="" class="img-responsive" />
+              <img
+                src="img/300x280xxx.png"
+                alt="300x280"
+                class="img-responsive"
+              />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                atque sed in, fugiat natus laboriosam
               </p>
-              <button class="btn continue-btn">Continue Reading</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn continue-btn">Continue Reading</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="post-card-md">
+          <div class="post-card-md flexbox card">
             <div class="post-card-img">
-              <img src="img/300x280.png" alt="" class="img-responsive" />
+              <img
+                src="img/300x280xx.png"
+                alt="300x280"
+                class="img-responsive"
+              />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                atque sed in, fugiat natus laboriosam
               </p>
-              <button class="btn continue-btn">Continue Reading</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn continue-btn">Continue Reading</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="post-card-md">
+          <div class="post-card-md flexbox card">
             <div class="post-card-img">
-              <img src="img/300x280.png" alt="" class="img-responsive" />
+              <img
+                src="img/300x280x.png"
+                alt="300x280"
+                class="img-responsive"
+              />
             </div>
             <div class="post-card-body">
               <div class="post-card-heading">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <h6>By <a href="#">Admin Ahsan</a> September 11, 2015</h6>
+                <hr />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                atque sed in, fugiat natus laboriosam voluptatum laudantium
-                dolores ratione eius impedit similique. Officiis, nisi impedit!
+                atque sed in, fugiat natus laboriosam
               </p>
-              <button class="btn continue-btn">Continue Reading</button>
-              <div class="social-link-grp">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-label="Facebook"></i
-                ></a>
-                <a href="#"
-                  ><i class="fa fa-twitter" aria-label="Twitter"></i
-                ></a>
-                <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-label="Google Plus"></i
-                ></a>
-                <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+              <div class="flexbox btn-section">
+                <button class="btn continue-btn">Continue Reading</button>
+                <div class="social-link-grp">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-label="Facebook"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-label="Twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-tumblr" aria-label="Tumblr"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -389,41 +471,41 @@
       <aside class="container-aside">
         <h2 class="section-header">Siderbar</h2>
         <hr />
-        <div class="sidebar-card">
-          <form>
-            <input type="text" value="Search Now" />
-            <i class="fa fa-search" aria-label="Search"></i>
-          </form>
-        </div>
+        <form class="sidebar-seach">
+          <input type="text" placeholder="Search Now" />
+          <i class="fa fa-search" aria-label="Search"></i>
+        </form>
 
-        <div class="sidebar-card">
+        <div class="sidebar-card card">
           <h3 class="section-header">Popular post</h3>
           <hr />
           <ul class="post-list">
             <li>
               <a href="#">
-                <img src="img/70x50.png" alt="" class="img-responsive" />
+                <img src="img/70x50.png" alt="70x50" class="img-responsive" />
+                <h5>Beauty Fashion</h5>
+                <h6>September 11, 2015</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="">
+                <img src="img/70x50x1.png" alt="70x50" class="img-responsive" />
+                <div class="heading">
+                  <h5>Beauty Fashion</h5>
+                  <h6>September 11, 2015</h6>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/70x50x2.png" alt="70x50" class="img-responsive" />
                 <h5>Beauty Fashion</h5>
                 <h6>September 11, 2015</h6>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/70x50.png" alt="" class="img-responsive" />
-                <h5>Beauty Fashion</h5>
-                <h6>September 11, 2015</h6>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/70x50.png" alt="" class="img-responsive" />
-                <h5>Beauty Fashion</h5>
-                <h6>September 11, 2015</h6>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/70x50.png" alt="" class="img-responsive" />
+                <img src="img/70x50x3.png" alt="70x50" class="img-responsive" />
                 <h5>Beauty Fashion</h5>
                 <h6>September 11, 2015</h6>
               </a>
@@ -431,13 +513,13 @@
           </ul>
         </div>
 
-        <div class="sidebar-card">
+        <div class="sidebar-card card sponsor">
           <a href="#">
-            <img src="img/250x250.png" alt="" class="img-responsive" />
+            <img src="img/250x250.png" alt="250x250" class="img-responsive" />
           </a>
         </div>
 
-        <div class="sidebar-card">
+        <div class="sidebar-card card">
           <h3 class="section-header">Categories</h3>
           <hr />
           <ul class="category-list">
@@ -462,113 +544,167 @@
           </ul>
         </div>
 
-        <div class="sidebar-card">
+        <div class="sidebar-card card instagram">
           <h3 class="section-header">Instagram</h3>
           <hr />
-          <ul class="flexbox">
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/80x70.png" alt="" class="img-responsive" />
-              </a>
-            </li>
-          </ul>
+          <div class="flexbox">
+            <a href="#">
+              <img src="img/80x70.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x1.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x2.png" alt="80x70" class="img-responsive" />
+            </a>
+          </div>
+          <div class="flexbox">
+            <a href="#">
+              <img src="img/80x70x4.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x5.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x6.png" alt="80x70" class="img-responsive" />
+            </a>
+          </div>
+          <div class="flexbox">
+            <a href="#">
+              <img src="img/80x70x7.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x8.png" alt="80x70" class="img-responsive" />
+            </a>
+            <a href="#">
+              <img src="img/80x70x3.png" alt="80x70" class="img-responsive" />
+            </a>
+          </div>
+        </div>
+        <div class="sidebar-card card">
+          <h3 class="section-header">Social Media</h3>
+          <hr />
+          <div class="social-link-grp">
+            <a href="#"><i class="fa fa-facebook" aria-label="Facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-label="Twitter"></i></a>
+            <a href="#"><i class="fa fa-tumblr" aria-label="Tumblr"></i></a>
+            <a href="#"
+              ><i class="fa fa-google-plus" aria-label="Google Plus"></i
+            ></a>
+            <a href="#"><i class="fa fa-share" aria-label="Share"></i></a>
+          </div>
+        </div>
+
+        <div class="sidebar-card card">
+          <h3 class="section-header">Social Media</h3>
+          <hr />
+          <div class="sliderPost" id="sliderPost">
+            <div class="sliderPost-control-left" onclick="goPostPrev();">
+              <i class="fa fa-arrow-left fa-2x" aria-label="left"></i>
+            </div>
+            <div class="sliderPost-control-right" onclick="goPostNext();">
+              <i class="fa fa-arrow-right fa-2x" aria-label="right"></i>
+            </div>
+            <div class="sliderPost-item class1">
+              <img
+                class="img-responsive"
+                alt="250x250"
+                src="img/250x250x2.png"
+              />
+            </div>
+            <div class="sliderPost-item display-none class2">
+              <img
+                class="img-responsive"
+                alt="250x250"
+                src="img/250x250x1.png"
+              />
+            </div>
+            <div class="sliderPost-item display-none class3">
+              <img
+                class="img-responsive"
+                alt="250x250"
+                src="img/250x250x3.png"
+              />
+            </div>
+            <div class="sliderPost-item display-none class4">
+              <img
+                class="img-responsive"
+                alt="250x250"
+                src="img/250x250x4.png"
+              />
+            </div>
+            <div class="sliderPost-item display-none class5">
+              <img
+                class="img-responsive"
+                alt="250x250"
+                src="img/250x250x5.png"
+              />
+            </div>
+          </div>
         </div>
       </aside>
     </section>
-    <footer class="container">
-      <div class="flexbox">
-        <div class="aboutme">
-          <h3 class="section-header">About US</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            harum.
-          </p>
-          <img src="img/370x230.png" alt="" class="img-responsive" />
-          <button class="btn continue-btn">Read more about me</button>
-        </div>
-        <div class="latesttwwet">
-          <h3 class="section-header">latest tweet</h3>
-          <hr />
-          <div class="tweets">
-            <h5>John Doe</h5>
+    <footer>
+      <a class="goTop" href="#header">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <div class="container">
+        <div class="flexbox">
+          <div class="aboutme">
+            <h3 class="section-header">About US</h3>
+            <hr />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-              iusto qui sunt distinctio quae maxime voluptatum delectus modi
-              temporibus pariatur?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, harum.
             </p>
-            <a href="#" class="link"
-              ><i class="fa fa-tumblr" aria-label="Twitter"></i> @johnDoe561</a
-            >
+            <img src="img/370x230.png" alt="" class="img-responsive" />
+            <button class="btn continue-btn">Read more about me</button>
           </div>
-          <div class="tweets">
-            <h5>John Doe</h5>
+          <div class="latesttwwet">
+            <h3 class="section-header">latest tweet</h3>
+            <hr />
+            <div class="tweets">
+              <h5>John Doe</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                iusto qui sunt distinctio quae maxime voluptatum delectus modi
+                temporibus pariatur?
+              </p>
+              <a href="#" class="link"
+                ><i class="fa fa-tumblr" aria-label="Twitter"></i>
+                @johnDoe561</a
+              >
+            </div>
+            <div class="tweets">
+              <h5>John Doe</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                iusto qui sunt distinctio quae maxime voluptatum delectus modi
+                temporibus pariatur?
+              </p>
+              <a href="#" class="link"
+                ><i class="fa fa-tumblr" aria-label="Twitter"></i>
+                @johnDoe561</a
+              >
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3 class="section-header">Subscribe our newsletter</h3>
+            <hr />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-              iusto qui sunt distinctio quae maxime voluptatum delectus modi
-              temporibus pariatur?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
+              dolor!
             </p>
-            <a href="#" class="link"
-              ><i class="fa fa-tumblr" aria-label="Twitter"></i> @johnDoe561</a
-            >
+            <form>
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email" />
+              <input
+                type="submit"
+                value="Subscribe Now"
+                class="btn continue-btn"
+              />
+            </form>
           </div>
-        </div>
-        <div class="newsletter">
-          <h3 class="section-header">Subscribe our newsletter</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
-            dolor!
-          </p>
-          <form>
-            <input type="text" value="Your Name" />
-            <input type="email" value="Your Email" />
-            <input
-              type="submit"
-              value="Subscribe Now"
-              class="btn continue-btn"
-            />
-          </form>
         </div>
       </div>
     </footer>

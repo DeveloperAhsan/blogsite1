@@ -652,7 +652,8 @@ footer .btn {
 
 @media (max-width: 600px) {
   .container {
-    width: 420px;
+    width: 95%;
+    margin: 0 auto;
   }
   .small-slider {
     overflow: hidden;
@@ -660,7 +661,7 @@ footer .btn {
 
   .small-slider .badge {
     top: 0;
-    left: 40%;
+    left: 35%;
   }
 
   .collapse {
@@ -694,11 +695,9 @@ footer .btn {
     margin: 2rem auto;
   }
   .post-card-md img,
-  .sponsor img {
+  .sponsor img,
+  .instagram img {
     min-width: 100%;
-  }
-  .instagram .flexbox {
-    display: flex;
   }
   .nav-left {
     width: 100%;

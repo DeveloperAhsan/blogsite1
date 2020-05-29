@@ -243,3 +243,14 @@ function smallPrev() {
     }
   }, 100);
 }
+
+function navbarToggle() {
+  setTimeout(function () {
+    let collapse = document.getElementById("collapse");
+    if (collapse.className.indexOf("collapse") == -1) {
+      collapse.classList.add("collapse");
+    } else {
+      collapse.classList.remove("collapse");
+    }
+  }, 100);
+}

@@ -210,6 +210,10 @@ nav ul li {
   border-right: 0.0625rem solid #cdcdcd;
   border-bottom: 0.0625rem solid #cdcdcd;
 }
+
+.navbar-toggler {
+  display: none;
+}
 /************ LOGO ****************/
 
 .logo {
@@ -257,6 +261,10 @@ nav ul li {
   min-height: 30.5rem;
   position: absolute;
   z-index: -2;
+}
+
+.slider img {
+  min-height: 30.5rem;
 }
 
 .slider .control-left {
@@ -544,18 +552,47 @@ footer .btn {
  Responsive
 ********************************************/
 
-@media screen and (max-width: 1170px) {
+@media (min-width: 961px) and (max-width: 1170px) {
   .container {
     width: 960px;
   }
-  .subtitle-set {
-    bottom: -14px;
+  .nav-link {
+    margin: 0rem 0.4375rem;
+  }
+  .small-slider {
+    overflow: hidden;
+  }
+
+  .small-slider .badge {
+    top: 0;
+  }
+
+  .social-link-grp a {
+    padding: 0.475rem;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media (min-width: 761px) and (max-width: 960px) {
   .container {
     width: 760px;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0rem 0.1375rem;
+    line-height: 3.125rem;
+  }
+  .small-slider {
+    overflow: hidden;
+  }
+
+  .small-slider .badge {
+    top: 0;
+    left: 40%;
+  }
+
+  .social-link-grp a {
+    padding: 0.125rem;
   }
 }
 
@@ -563,10 +600,113 @@ footer .btn {
   .container {
     width: 600px;
   }
+  nav .flexbox {
+    display: block;
+  }
+  .nav-middle {
+    width: 100%;
+  }
+  .nav-right {
+    width: 100%;
+    border: 0;
+    text-align: center;
+  }
+  .social-link > li:last-child {
+    border-right: 0.0625rem solid #cdcdcd;
+  }
+  .nav-left {
+    width: 100%;
+    border-left: 0;
+    text-align: center;
+  }
+  .small-slider {
+    overflow: hidden;
+  }
+
+  .small-slider .badge {
+    top: 0;
+    left: 40%;
+  }
+  section.flexbox {
+    display: block;
+  }
+  .container-content {
+    width: 100%;
+  }
+  .container-aside {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  .social-link-grp a {
+    padding: 0.225rem;
+  }
+  .post-card-md img,
+  .sponsor img,
+  .instagram img,
+  .sliderPost img {
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
-    width: 480px;
+    width: 420px;
+  }
+  .small-slider {
+    overflow: hidden;
+  }
+
+  .small-slider .badge {
+    top: 0;
+    left: 40%;
+  }
+
+  .collapse {
+    display: none;
+  }
+  .main-nav li {
+    display: block;
+  }
+  .flexbox {
+    display: block;
+  }
+  header .flexbox {
+    display: flex;
+  }
+  nav .flexbox {
+    display: block;
+  }
+
+  .post-card-sm {
+    width: 100%;
+  }
+
+  .social-link-grp {
+    margin-top: 0.925rem;
+  }
+  .social-link-grp a {
+    padding: 0.725rem;
+  }
+  footer .flexbox > div {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .post-card-md img,
+  .sponsor img {
+    min-width: 100%;
+  }
+  .instagram .flexbox {
+    display: flex;
+  }
+  .nav-left {
+    width: 100%;
+    border-left: 0;
+    text-align: center;
+  }
+  .navbar-toggler {
+    display: inline-block;
+    margin: 0rem 0.9375rem;
   }
 }
